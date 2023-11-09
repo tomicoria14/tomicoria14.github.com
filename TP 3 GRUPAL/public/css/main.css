@@ -1,0 +1,140 @@
+/* TP Nº2 : flexBox
+    Integrantes del grupo:
+    Coria Tomás
+    Murciano Agustín
+    Teruelo Tomás 
+    */
+
+/* 
+    
+GENERAL
+
+*/    
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+main > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0;
+}
+.section__about{
+    background-color: #f8f8f8;
+}
+.nav-link {
+    margin: 3% 0 3% 10%;
+}
+.banner {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 80%;
+    margin: 4% 10%;
+}
+
+.section__title {
+    color: black;
+    text-align: center;
+    width: 100%;
+    margin: 4% 0 0%;
+}
+main > section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#section__gallery {
+    width: 80%;
+    margin: -7% 0 3% 10%;
+}    
+.gallery__photo {
+    margin-top: 15px;
+}
+.section__paragraph {
+    color: black;
+    line-height: 2;
+    margin: 3% 8%;
+}
+footer {
+    display: flex;
+    width: 100%;
+    height: 10vh;
+    background-color: #242424;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span {
+    color: white;
+}
+
+
+/*
+    DESKTOP
+*/
+
+@media (min-width:1024px) {
+    main > section {
+        justify-content: space-around;
+    }
+    .banner {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        height: 70v;
+        margin: 4% 10%;
+    }
+    
+    .section__title {
+        color: black;
+        text-align: center;
+        width: 100%;
+        margin: 4% 0 0%;
+    }
+    main > section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #section__gallery{
+        justify-content: space-around;
+    }
+    .gallery__photo{
+        width: 28%;
+        height: 34vh;
+        margin-bottom: 3%;
+    }   
+    .section__paragraph {
+        color: black;
+        width: 90%;
+        justify-content: center;
+        line-height: 2;
+        margin-inline-start: 85px;
+    }
+    footer {
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        background-color: #242424;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    footer span {
+        color: white;
+    }
+        
+}
